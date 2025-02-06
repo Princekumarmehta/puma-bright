@@ -8,9 +8,7 @@ class TestApp(unittest.TestCase):
         response = tester.get("/check/system/operation")
         print(response.data.decode("utf-8"))
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(
-            response.data.decode("utf-8"), "Hello, Jenkins Multi-Stage Pipeline!"
-        )
+        self.assertEqual(response.data.decode("utf-8"), "All systes operationsl!")
 
 
 if __name__ == "__main__":
